@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/tulip.jpg" type="image/x-icon">
+
+    <!--CSS-->
+    <Style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Estilo del cuerpo de la pagina */
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #ffffff;
+        }
+
+        /* Header, logo y titulo */
+        .header {
+            padding: 60px;
+            text-align: center;
+            background:  #FFC0CB;
+            color: rgb(88, 68, 68);
+        }
+
+        /* Estilo de la barra de navegacion */
+        .navbar {
+            display: flex;
+            background-color: #fff8fa;
+            color: #FFC0CB;
+        }
+
+        /* Estilo de los enlaces de la barra de navegacion */
+        .navbar a {
+            color: #FFC0CB;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Cambiar el color cuando paso el mouse */
+        .navbar a:hover {
+            background-color: #ffffff;
+            color: #FFC0CB;
+        }
+
+        /* Contenedor de columnas */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Barra lateral */
+        .side {
+            flex: 30%;
+            background-color: #FFC0CB;
+            padding: 20px;
+        }
+
+        /*Columna principal */
+        .main {
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Imagen */
+        .imagenfalsa {
+            width: 100%;
+            padding: 20px;
+        }
+
+       
+        
+        /*Flex Responsive */
+        @media screen and (max-width: 700px) {
+            .row,
+            .navbar {
+                flex-direction: column;
+            }
+        }
+
+        .footer{
+	background-color: #f9bbc4;
+    padding: 70px 0;
+}
+
+        
+
+    </Style>
+</head>
+<body>
+    
+
+    <!--Header-->
+    <div class="header">
+        <h1 style="color: #ffffff;">Jennifer Linares Moneró</h1>
+       
+    </div>
+
+    <!--Barra de navegacion-->
+    <div class="navbar">
+        <div class="navbar">
+            <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/index.html">Inicio</a> 
+
+ </div>
+
+    </div>
+
+    <!--Contenido-->
+    <div class="row">
+        <div class="side">
+           <center>
+            <h2 style="color:#ffffff ;">Mi foto</h2>
+            <div class="imagenfalsa"><img src="img/jenni.PNG" alt="Mujer flores" width="250" height="220"></div>
+            </center>
+            <br>
+            <h3 style="color: #ffffff;">Habilidades:</h3>
+            <br>
+            <p style="color: #fcecec;">. Comunicación</p>
+            <p style="color: #fcecec;">. Matematicas</p>
+            <p style="color: #fcecec;">. Adaptabilidad</p>
+            <p style="color: #fcecec;">. Socialbilidad</p>
+            <p style="color: #fcecec;">. Creatividad</p>
+            <p style="color: #fcecec;">. Inovación</p>
+            <p style="color: #fcecec;">. Calculo</p>
+            
+            <br>
+            <h3 style="color: #ffffff;">Hobies:</h3>
+            <br>
+            <p style="color: #fcecec;">. Lettering</p>
+            <p style="color: #fcecec;">. Medicina</p>
+            <p style="color: #fcecec;">. Deportes</p>
+            <p style="color: #fcecec;">. Ajedrez </p>
+            <p style="color: #fcecec;">. Idiomas</p>
+            <p style="color: #fcecec;">. Cocinar</p>
+            <p style="color: #fcecec;">. Musica</p>
+            <p style="color: #fcecec;">. Baile</p>
+          
+            <br>
+            <h3 style="color: #ffffff;">Apariencia:</h3>
+            <br>
+            <p style="color: #fcecec;">. Pestañas largas</p>
+            <p style="color: #fcecec;">. Cabello oscuro</p>
+            <p style="color: #fcecec;">. Delgada</p>
+            <p style="color: #fcecec;">. Alta</p>
+            <br>
+            <h3 style="color: #ffffff;">Direcciones:</h3>
+            
+            <h5 style="color: #fcecec;">. La escuela</h5>
+            <center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.9722286475726!2d-69.9213139!3d18.4849171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89c78951c3cf%3A0x505aaa4426118d4f!2sCentro%20Educativo%20Santa%20Luisa%20De%20Marillac!5e0!3m2!1ses-419!2sdo!4v1733454583607!5m2!1ses-419!2sdo" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </center>
+            <h5 style="color: #fcecec;">. Mi casa</h5>
+            <center>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0317612975177!2d-69.9456536257613!3d18.572606767584553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8ff614b59d9d%3A0xf1b20e3b45f64394!2sMi%20Vivienda%20Ciudad%20Modelo%20lll!5e0!3m2!1ses!2sdo!4v1733605354908!5m2!1ses!2sdo" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </center>
+        </div>
+
+        <div class="main">
+            <h2 style="color: #FFC0CB;">Musica favorita</h2>
+            <h5>Top 4</h5>
+        
+            <br>
+            <h3 style="color: #FFC0CB;">.1</h3> 
+            
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4EKZsrsCKyqr64FBHLc0DU?utm_source=generator" width="60%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p></p>
+            
+            <br>
+            <h3 style="color: #FFC0CB;">.2</h3>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/426kUsOMW5p2VWEVNu5BxF?utm_source=generator" width="60%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p></p>
+            <br>
+
+            <br>
+            <h3 style="color: #FFC0CB;">.3</h3>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/42QWOsW1f9uDu9zsoUAE73?utm_source=generator&theme=0" width="60%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p></p>
+            <br>
+
+            <br>
+            <h3 style="color: #FFC0CB;">.4</h3>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6QJ1F9DrlsRSmKDcdVS0Oy?utm_source=generator&theme=0" width="60%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p></p>
+            <br>
+
+          
+
+            
+            <h2 style="color: #FFC0CB;">Favoritos</h2>
+            <h5>Postres, comidas, bebidas, juegos, Netflix (Peliculas, series y TV shows) y aniamales</h5>
+            
+            
+            
+            <nav class="navbar">
+                <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Postres.html">Postres</a>
+                <br>
+                <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Comida.html">Food</a>
+                <br>
+                <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Bebidas.html">Bebidas</a>
+                <br>
+                <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Juegos.html">Juegos</a>
+                <br>
+                <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Peli.html">Peliculas</a>
+                <br>
+                <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/animales.html">Animales</a>
+                </nav>
+            
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <footer class="footer">
+             <div class="container">
+                 <div class="row">
+                     <div class="footer-col">
+                        <h4>Paginas</h4>
+                        <ul>
+                           <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/index.html">Inicio</a></li>
+                           <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/flex.html">Flex</a></li>
+                           <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Peli.html">Peliculas</a></li>
+                           <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Postres.html">Postres</a></li>
+                           <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Comida.html">Food</a></li>
+                           <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Bebidas.html">Bebidas</a></li>
+                           <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Juegos.html">Juegos</a></li>
+                           <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/animales.html">Animales</a></li>
+                        </ul>
+                     </div>
+                     <div class="footer-col" style="color: #ffffff;">
+                         <h4>Contacto</h4>
+                         <ul>
+                             <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a></li>
+                         
+                             <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Menssager</a></li>
+                         </ul>
+                     </div>
+                     <div class="footer-col">
+                         <h4>Direcciones</h4>
+                         <ul>
+    
+                            <p style="color: #f4f4f4;"> <b>Mi casa: </b></p> 
+                             <li><a href="https://maps.app.goo.gl/YCdnNv9o8ybwN6Qd9">Ver</a></li>
+                             <br>
+                             <p style="color: #f4f4f4;"> <b>La escuela:</b></p>
+                             <li><a href="https://maps.app.goo.gl/VsUcyPyvnGRBXrDx9">Ver</a></li>
+                             <br>
+                             
+                         </ul>
+                     </div>
+                     <div class="footer-col">
+                         <h4>follow us</h4>
+                         <div class="social-links">
+                             <a href="#"><i class="fab fa-facebook-f"></i></a>
+                             <a href="#"><i class="fab fa-twitter"></i></a>
+                             <a href="#"><i class="fab fa-instagram"></i></a>
+                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </footer>
+</body>
+</html>

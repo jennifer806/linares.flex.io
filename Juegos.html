@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juegos</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/cb/5e/bd/cb5ebdeb8296388d3cefbc917e16861c.jpg" type="image/x-icon">
+  </head>
+  <body>
+
+    <header>
+      <h1>Juegos</h1>
+      
+  </header>
+  <div class="navbar">
+    <div class="navbar">
+        <div class="navbar">
+          <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/index.html">Inicio</a> 
+          <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/flex.html">Flex</a>
+          <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Postres.html">Postres</a>
+          <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Comida.html">Comidas</a>
+          <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Bebidas.html">Bebidas</a>
+          <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Juegos.html">Juegos</a>
+          <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Peli.html">Netflix</a>
+          <a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/animales.html">Animales</a>
+
+        
+        </div>
+
+    </div>
+
+
+</div>
+
+  
+    <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+/* Estilo de los enlaces de la barra de navegacion */
+.navbar a {
+    color: rgb(178, 32, 32);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Cambiar el color cuando paso el mouse */
+.navbar a:hover {
+    background-color: #d356a3;
+    color: #d356a3;
+}
+  
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: "Sen", sans-serif;
+  }
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #FFC0CB;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #ffffff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffffff;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+        /* Estilo de la barra de navegacion */
+        .navbar {
+            display: flex;
+            background-color: #ffffff;
+        }
+
+        /* Estilo de los enlaces de la barra de navegacion */
+        .navbar a {
+            color: #FFC0CB;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        /* Cambiar el color cuando paso el mouse */
+        .navbar a:hover {
+            background-color: #fcd7dd;
+            color: rgb(255, 255, 255);
+        }
+
+        /* Contenedor de columnas */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        body {
+          
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #FFC0CB;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: #ffffff;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+      
+       
+        
+        
+  
+        body{
+            background-image: url(https://i.pinimg.com/736x/82/d9/19/82d9199bfa444a02b1ebb4f7b35c1db0.jpg);
+        }
+
+		@import url("https://es.pinterest.com/pin/146226319145317398/");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  position: relative;
+  min-width: 350px;
+  min-height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  z-index: 10;
+  padding: 20px;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+}
+.box h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.box .list {
+  position: relative;
+  display: flex;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.box .list:hover {
+  background: #fff;
+  box-shadow: -15px 30px 50px rgba(0, 0, 0, 0.5);
+  transform: scale(1.15) translateX(30px) translateY(-15px);
+  z-index: 1000;
+}
+.box .list:hover .content .rank {
+  right: 20px;
+}
+.box .list:hover .content h4, .box .list:hover .content p {
+  color: #333;
+}
+.box .list .imgBx {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.box .list .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.box .list .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+.box .list .content .rank {
+  position: absolute;
+  right: -50px;
+  color: rgb(1, 247, 255);
+  transition: 0.5s;
+  font-size: 2em;
+}
+.box .list .content .rank small {
+  font-weight: 500;
+  opacity: 0.25;
+}
+.box .list .content h4 {
+  line-height: 1.2em;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.box .list .content p {
+  font-size: 0.75em;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=styles.css.map */
+    </style>
+    <section>
+        <div class="box">
+			<h3>Top 6</h3>
+
+      <div class="list">
+				<div class="imgBx">
+					<img src="https://i.pinimg.com/736x/20/b7/52/20b75227a92bfcc7a9ca2ecfdc41f16a.jpg">
+				</div>
+				<div class="content">
+					<h2 class="rank" style="color: #FFC0CB;"><small>#</small>1</h2>
+					<h4>Fortnite</h4>
+					<p>Con amigos</p>
+				</div>
+			</div>
+
+			<div class="list">
+				<div class="imgBx">
+					<img src="https://i.pinimg.com/736x/cc/83/ff/cc83ff3f7c6214df3206f210928e7b66.jpg">
+				</div>
+				<div class="content">
+					<h2 class="rank" style="color: #FFC0CB;"><small>#</small>2</h2>
+					<h4>Ajedrez</h4>
+					<p>Desestresante</p>
+				</div>
+			</div> 
+
+      <div class="list">
+				<div class="imgBx">
+					<img src="https://i.pinimg.com/736x/3f/b6/8f/3fb68ff0da0924ec4b73379b2026ccf8.jpg">
+				</div>
+				<div class="content">
+					<h2 class="rank" style="color: #FFC0CB;"><small>#</small>3</h2>
+					<h4>Roblox</h4>
+					<p>Diversion</p>
+				</div>
+			</div>
+			
+			<div class="list">
+				<div class="imgBx">
+					<img src="https://i.pinimg.com/736x/4c/fe/76/4cfe766fec800741cd5930b282aaa803.jpg">
+				</div>
+				<div class="content">
+					<h2 class="rank" style="color: #FFC0CB;"><small>#</small>4</h2>
+					<h4>Parches</h4>
+					<p>Reunion familiar</p>
+				</div>
+			</div>
+			<div class="list">
+				<div class="imgBx">
+					<img src="https://i.pinimg.com/736x/35/d7/d9/35d7d946c89d1582981dce4ded0954b6.jpg">
+				</div>
+				<div class="content">
+					<h2 class="rank" style="color: #FFC0CB;"><small>#</small>5</h2>
+					<h4>Cartas</h4>
+					<p>Amigos</p>
+				</div>
+			</div>
+			<div class="list">
+				<div class="imgBx">
+					<img src="https://i.pinimg.com/736x/88/b3/57/88b357d44079525d76356ee9ed7693fe.jpg">
+				</div>
+				<div class="content">
+					<h2 class="rank" style="color: #FFC0CB;"><small>#</small>6</h2>
+					<h4>Uno</h4>
+					<p>Escuela</p>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+    <footer>
+      <footer class="footer">
+           <div class="container">
+               <div class="row">
+                   <div class="footer-col">
+                    <h4>Paginas</h4>
+                    <ul>
+                      <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/index.html">Inicio</a></li>
+                      <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/flex.html">Flex</a></li>
+                      <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Postres.html">Postres</a></li>
+                      <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Comida.html">Comidas</a></li>
+                      <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Bebidas.html">Bebidas</a></li>
+                      <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Juegos.html">Juegos</a></li>
+                      <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/Peli.html">Netflix</a></li>
+                      <li><a href="file:///C:/Users/Mar%C3%ADa%20Monero/OneDrive%20-%20Transformaci%C3%B3n%20Digital%20Educaci%C3%B3n/Escritorio/flex/animales.html">Animales</a> </li>
+
+                      </ul>
+                   </div>
+                   <div class="footer-col">
+                       <h4>Contacto</h4>
+                       <ul>
+                        <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Gmail</a></li>
+                         
+                        <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox">Menssager</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer-col">
+                       <h4>Direcciones</h4>
+                       <ul>
+  
+                          <p style="color: #f4f4f4;"> <b>Mi casa: </b></p> 
+                           <li><a href="https://maps.app.goo.gl/YCdnNv9o8ybwN6Qd9">Ver</a></li>
+                           <br>
+                           <p style="color: #f4f4f4;"> <b>La escuela:</b></p>
+                           <li><a href="https://maps.app.goo.gl/VsUcyPyvnGRBXrDx9">Ver</a></li>
+                           <br>
+                           
+                       </ul>
+                   </div>
+                   <div class="footer-col">
+                       <h4>follow us</h4>
+                       <div class="social-links">
+                           <a href="#"><i class="fab fa-facebook-f"></i></a>
+                           <a href="#"><i class="fab fa-twitter"></i></a>
+                           <a href="#"><i class="fab fa-instagram"></i></a>
+                           <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+      </footer>
+    
+  
+  
+  </body>
+</html>
